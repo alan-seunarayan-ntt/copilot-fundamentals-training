@@ -4,15 +4,19 @@
     "cpus": 4
   },
   "name": "Copilot Demo",
-  "postCreateCommand": "sudo cp --force ./.devcontainer/welcome-message.txt /usr/local/etc/vscode-dev-containers/first-run-notice.txt",
+  "postCreateCommand": "sudo cp --force ./.devcontainer/welcome-message.txt /usr/local/etc/vscode-dev-containers/first-run-notice.txt && bash .devcontainer/install-dotnet9.sh",
   "customizations": {
     "vscode": {
       "extensions": [
-        "GitHub.copilot",
-        "GitHub.copilot-chat",
-        "GitHub.copilot-labs",
-        "vsls-contrib.codetour",
-        "Phu1237.vs-browser"
+  "GitHub.copilot",
+  "GitHub.copilot-chat",
+  "GitHub.copilot-labs",
+  "ms-dotnettools.csharp",
+  "ms-dotnettools.vscode-dotnet-runtime",
+  "formulahendry.dotnet-test-explorer",
+  "k--kato.docomment",
+  "vsls-contrib.codetour",
+  "Phu1237.vs-browser"
       ]
     }
   }
