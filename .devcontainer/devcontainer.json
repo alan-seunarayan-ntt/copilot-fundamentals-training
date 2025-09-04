@@ -7,6 +7,11 @@
   "postCreateCommand": "sudo cp --force ./.devcontainer/welcome-message.txt /usr/local/etc/vscode-dev-containers/first-run-notice.txt && bash .devcontainer/install-dotnet9.sh",
   "customizations": {
     "vscode": {
+      "settings": {
+        "workbench.editorAssociations": {
+          "*.md": "vscode.markdown.preview.editor"
+        }
+      },
       "extensions": [
   "GitHub.copilot",
   "GitHub.copilot-chat",
@@ -16,7 +21,8 @@
   "formulahendry.dotnet-test-explorer",
   "k--kato.docomment",
   "vsls-contrib.codetour",
-  "Phu1237.vs-browser"
+  "Phu1237.vs-browser",
+  "ms-docs.microsoft-docs"
       ]
     }
   }
